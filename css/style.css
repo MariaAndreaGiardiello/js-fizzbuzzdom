@@ -1,15 +1,50 @@
 /*-------------------
-    DEBUG
+    RESET
 -------------------*/
-.debug .container-fluid{
-    background-color: rgb(26, 58, 74);
-    height: 100vh;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.debug .col-1{
-    width: 80px;
-    height: 80px;
+/*-------------------
+    DEBUG
+-------------------*/
+.debug .container{
+    background-color: rgb(26, 58, 74);
+}
+
+.debug .box{
     background-color: rgb(64, 135, 174);
+}
+
+.debug .container-small{
+    background-color: pink;
+}
+
+/*-------------------
+    COMMON
+-------------------*/
+.container-small{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px;
+}
+
+.container{
+    height: 100vh;
+    text-align: center;
 }
 
 /*-------------------
