@@ -10,7 +10,7 @@
 /*-------------------
     DEBUG
 -------------------*/
-.debug .container{
+body{
     background-color: rgb(26, 58, 74);
 }
 
@@ -18,8 +18,8 @@
     background-color: rgb(64, 135, 174);
 }
 
-.debug .container-small{
-    background-color: pink;
+.debug .aqua{
+    background-color: rgb(98, 211, 164);
 }
 
 /*-------------------
@@ -37,13 +37,12 @@
 }
 
 .box{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 5px 5px;
 }
 
 .container{
-    height: 100vh;
     text-align: center;
 }
 

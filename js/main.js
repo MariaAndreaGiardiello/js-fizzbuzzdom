@@ -11,16 +11,28 @@
 // 1. inserire contaainer fino a 100
 const container = document.querySelector('.container-small');
 console.log(container)
-// 2. creare una variabile per lo stile 
-// 3. creare una variabile per il testo all'interno dei quadrati
-// 4. strutturare un for per numerazione fino a 100
+// 2. strutturare un for per numerazione fino a 100
 for( let i = 1; i <= 100; i++ ) {
    container.innerHTML += "<div class='box'></div>";
 }
-
-// 5. creare un if per stabilire come comportarsi in caso di numero multiplo di 3
+// 3. creare una variabile per i multipli
+let multipli = i;
+// 4. creare una variabile per il testo
+let boxtext;
+// 4.1 creare una variabile per lo stile
+let boxcolor
+// 5.creare un if per stabilire come comportarsi in caso di numero multiplo di 3
         //testo "Fizz"
-// 6. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
+if (multipli !=(multipli % 3)(multipli % 5)) {
+    container.innerHTML += "<div class='box'></div>";
+} else if (multipli = (multipli % 3)) {
+    container.innerHTML += "<div class='box aqua'></div>";
+}
+// 6. creare un if per stabilire come comportarsi in caso di numero multiplo di 3
+        //colore "rgb(98;211;164)"
+// 7. creare un if per stabilire come comportarsi in caso di numero multiplo di 3
+        //testo "Fizz"
+// 8. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
         //testo "Buzz"
-// 7. creare un if per stabilire come comportarsi in caso di numero multiplo di 3 e di 5
+// 9. creare un if per stabilire come comportarsi in caso di numero multiplo di 3 e di 5
         //testo "FizzBuzz"
