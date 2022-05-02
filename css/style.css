@@ -1,0 +1,22 @@
+/*-------------------
+    DEBUG
+-------------------*/
+.debug .container-fluid{
+    background-color: rgb(26, 58, 74);
+    height: 100vh;
+}
+
+.debug .col-1{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(64, 135, 174);
+}
+
+/*-------------------
+    THYPO
+-------------------*/
+.title{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
