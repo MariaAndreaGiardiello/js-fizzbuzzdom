@@ -14,19 +14,28 @@ console.log(container)
 // 2. strutturare un for per numerazione fino a 100
 for( let i = 1; i <= 100; i++ ) {
    container.innerHTML += "<div class='box'></div>";
+   let box = document.querySelector('.box');
    if ( i % 3 === 0 && i % 5 === 0) {
 // 3. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
 //testo "FizzBuzz"
-           console.log("FizzBuzz")
+           console.log("FizzBuzz");
+           box.classList.add('pink');
+           box.innerText = "FizzBuzz";
 // 4. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
 //testo "Fizz"
    } else if ( i % 3 === 0) {
-           console.log("Fizz")
+           console.log("Fizz");
+           box.classList.add('aqua');
+           box.innerText = "Fizz";
  // 5. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
         //testo "Buzz"
    } else if ( i % 5 === 0) {
-           console.log("Buzz")
+           console.log("Buzz");
+           box.classList.add('yellow');
+           box.innerText = "Buzz";
    } else {
-           console.log(i)
+           console.log(i);
    }
+
+   container.append(box);
 }
