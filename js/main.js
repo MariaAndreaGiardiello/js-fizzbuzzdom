@@ -11,10 +11,12 @@
 // 1. inserire contaainer fino a 100
 const container = document.querySelector('.container-small');
 console.log(container)
-// 2. strutturare un for per numerazione fino a 100
+// 2. strutturare un for per numerazione fino a 100 (inserimento box)
 for( let i = 1; i <= 100; i++ ) {
-   container.innerHTML += "<div class='box'></div>";
-   let box = document.querySelector('.box');
+   const box = document.createElement('div')
+   //2.1 aggiunta caratteristiche e testo all'elemento creato (box)
+   box.classList.add('box')
+   box.innerText = i;
    if ( i % 3 === 0 && i % 5 === 0) {
 // 3. creare un if per stabilire come comportarsi in caso di numero multiplo di 5
 //testo "FizzBuzz"
@@ -34,8 +36,7 @@ for( let i = 1; i <= 100; i++ ) {
            box.classList.add('yellow');
            box.innerText = "Buzz";
    } else {
-           console.log(i);
+           console.log(i)
    }
-
-   container.append(box);
+   container.append(box)
 }
